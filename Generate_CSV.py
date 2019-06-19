@@ -13,7 +13,7 @@ with open(path, 'a') as csv_file:
     names = []
     duration = []
 
-    # adds file name to list f
+    # adds file name to list names
     for (dirpath, dirnames, filenames) in walk(audio_location):
         names.extend(filenames)
 
