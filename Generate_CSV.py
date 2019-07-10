@@ -1,6 +1,6 @@
-import os, glob, wave
-from os import walk
 from scipy.io import wavfile as wav
+from os import walk
+import os, glob, wave
 import csv
 
 path = 'C:/Users/Muhammad/Desktop/REU19/Talker_Speaker.csv'
@@ -68,8 +68,4 @@ with open(path, 'a') as csv_file:
                          'File_Name_Out_S4' : names[i] + '_speaker_4', 
                          'File_Name_Out_S5' : names[i] + '_speaker_5',
                          'File_Name_Out_S6' : names[i] + '_speaker_6',
-                         'Duration' : duration[i]})
-
-    
-
-    
+                         'Duration' : duration[i]}) 
